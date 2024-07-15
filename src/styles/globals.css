@@ -1,0 +1,391 @@
+:root {
+  --primary-color: #226B5A;
+  --secondary-color: #FF8A00;
+}
+
+nav {
+  background-color: var(--primary-color);
+  color: #fff !important;
+}
+
+nav a {
+  color: #fff !important;
+}
+
+nav input {
+  border-radius: 20px;
+  border: none;
+  height: 30px;
+  padding-left: 10px;
+}
+
+nav section button {
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  border: none;
+  margin-left: 10px;
+}
+
+.caraousel {
+  height: 300px;
+  width: 100%;
+  padding: 30px 0;
+}
+
+.caraousel .carousel {
+  width: 90%;
+  background-color: grey;
+  height: 90%;
+  margin: auto;
+}
+
+.caraousel .carousel-item {
+  height: 220px;
+  width: 100%;
+  align-items: center;
+  display: flex;
+  align-items: center;
+}
+
+.caraousel img {
+  /* width: 100%; */
+  /* height: 250px; */
+  object-fit: contain;
+
+}
+
+.home .card {
+  border: none;
+  margin: auto 10px;
+}
+
+.buttonScrool {
+  outline: none;
+  border: none;
+}
+
+.home .card .card-body {
+  padding: 10px 0;
+}
+
+.home .card img {
+  height: 200px;
+  background-color: gray;
+}
+
+.home .card span {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.home .card span p {
+  margin: 0;
+  color: var(--secondary-color);
+}
+
+.home .card span a {
+  width: 50%;
+  font-size: 11px;
+  padding: 5px 0;
+  height: fit-content;
+  background-color: var(--primary-color);
+  border: none;
+}
+
+.home .card .card-body span svg {
+  margin-right: 5px;
+}
+
+.category .card button,
+.category .card a {
+  width: 16rem;
+  height: 150px;
+  /* background-color: #226B5A; */
+  border: none;
+  border-radius: 10px;
+  color: #fff;
+  font-weight: 500;
+}
+
+.category .card button:hover {
+  background-color: #b9b6b6 !important;
+  scale: 1.1;
+}
+
+.footer {
+  background-color: var(--primary-color);
+  color: #fff;
+  height: 350px;
+  padding: 20px 20px 20px 0;
+}
+
+.footer div section {
+  display: flex;
+  justify-content: center;
+  /* align-items: center; */
+  flex-direction: column;
+  height: 100%;
+}
+
+.footer span {
+  display: flex;
+  flex-direction: column;
+}
+
+/* .footer .maps {
+  width: 100px;
+  height: 300px;
+} */
+
+.detail .content {
+  width: 100%;
+  height: 90vh;
+  display: flex;
+  align-items: center;
+  padding: 20px;
+}
+
+.detail .content hr {
+  margin: 0 auto;
+}
+
+.detail .content>* {
+  height: 90%;
+  width: 100%;
+  box-shadow: 0px 0px 4px 0px rgb(0, 0, 0, 0.3);
+  border-radius: 20px;
+  padding: 20px;
+}
+
+.detail .content .imgDetail>* {
+  width: 80%;
+  margin: auto;
+  height: 70%;
+  background-color: #D9D9D9;
+}
+
+.detail .content .buttonF {
+  border: none;
+  border-radius: 20px;
+  background-color: var(--secondary-color);
+  color: #fff;
+  font-size: 10px;
+  margin: 0;
+  padding: 0 10px;
+}
+
+.detail .content p {
+  margin: 0 0 10px 0;
+}
+
+.detail .content .simF p {
+  margin: auto;
+  font-size: 12px;
+}
+
+.detail .content .simF b {
+  color: var(--secondary-color);
+}
+
+.detail .content .simF button {
+  background-color: #EAE8E8;
+  border: none;
+  border-radius: 20px;
+  height: fit-content;
+  padding: 5px 50px;
+  margin: auto 0;
+}
+
+.detail .content .simSec {
+  margin-left: 20px;
+}
+
+.detail .content .simSec p {
+  margin: 0;
+}
+
+.detail .content .simSec button {
+  border: none;
+  border-radius: 10px;
+  padding: 3px 10px;
+  font-weight: 500;
+  font-size: 20px;
+}
+
+.detail .content .buttons button {
+  border: 1px solid var(--primary-color);
+  border-radius: 20px;
+  padding: 5px 10px;
+  font-size: 18px;
+  width: 200px;
+  margin-right: 20px;
+  margin-top: 20px;
+  background-color: var(--primary-color);
+  color: #fff;
+  font-weight: 700;
+}
+
+.testimoni .card {
+  width: 20%;
+  height: 250px;
+}
+
+.testimoni .review {
+  height: 90vh;
+  text-align: center;
+}
+
+.testimoni .review div {
+  margin-top: 70px;
+}
+
+.testimoni .testimonis section {
+  width: 30%;
+  height: 300px;
+  background-color: #D9D9D9;
+}
+
+@media (max-width: 390px) {
+
+  .navbar .container-fluid {
+    padding: 0;
+  }
+
+  .navbar section {
+    width: 50%;
+  }
+
+  .navbar .navbar-toggler {
+    margin-left: 0;
+    color: #fff;
+    border: none;
+    fill: #fff;
+    padding: 0;
+    margin-right: 5px;
+  }
+
+  .navbar section input {
+    width: 40%;
+    font-size: 10px;
+  }
+
+  .navbar-brand {
+    font-size: 16px;
+  }
+
+  .navbar button svg {
+    width: 20px !important;
+    height: 20px !important;
+  }
+
+  .footer h4 {
+    font-size: 14px;
+  }
+
+  .footer .footerTwo {
+    width: 50% !important;
+  }
+
+  .footer .footerTwo h6 {
+    font-size: 12px;
+  }
+
+  .footer .footerTwo svg {
+    width: 20px;
+    margin-right: 8px;
+  }
+
+  .footer .footerTwo p {
+    font-size: 10px;
+  }
+
+  .footer .maps iframe {
+    width: 150px;
+    margin-left: 10px;
+    height: 200px;
+  }
+
+  .home button svg {
+    width: 50px;
+  }
+
+  .home .buttonScrool {
+    padding: 0;
+  }
+
+  .home .cardContain {
+    padding: 0 30px !important;
+  }
+
+  .home .card {
+    width: 10rem !important;
+    height: 300px;
+  }
+
+  .home .card-body h5,
+  .home .card-body b {
+    font-size: 14px;
+  }
+
+  .home .card-body p,
+  .home .card-body a {
+    font-size: 12px;
+  }
+
+  .home .produk .card{
+    width: 49% !important;
+    margin: 0 0 1rem ;
+  }
+
+  .home .produk section{
+    flex-wrap: wrap;
+  }
+
+  .home .produk .card-body{
+    padding: 5px;
+  }
+
+  .home .produk .card-body > :nth-child(1) {
+    margin-bottom: 20px;
+  }
+
+  .home .produk .card-body span{
+    margin-bottom: 0;
+  }
+
+  .home .category .card{
+    height: fit-content;
+    margin-bottom: 10px;
+  }
+
+  .home .category .card button{
+    width: 70px;
+  }
+
+  .testimonis .review section{
+    /* height: 100px; */
+  }
+
+  .testimonis .card{
+    width: 100px;
+    height: 100px;
+    margin: 5px !important ;
+  }
+
+  .detail .content{
+    height: 150vh;
+  }
+
+  .detail .content div{
+    flex-direction: column;
+  }
+
+  .detail .content section{
+    height: 50%;
+    width: 100%;
+  }
+
+}
