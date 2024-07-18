@@ -34,6 +34,7 @@ export default function Home() {
                             ))}
                         </section>
                     </div>
+                    
                     <div id="camping tools" className="mt-5">
                         <section>
                             <h5>Camping Tools</h5>
