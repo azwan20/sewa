@@ -13,8 +13,8 @@ export default function Home() {
                         <section>
                             <h5>Tenda</h5>
                         </section>
-                        <section className="d-flex justify-content-between">
-                            {[0, 1, 2, 3].map((index) => (
+                        <section className="card-containers">
+                            {[0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10].map((index) => (
                                 <div class="card" style={{ width: '15rem' }}>
                                     <img src="..." class="card-img-top" alt="..." />
                                     <div class="card-body">
@@ -38,8 +38,8 @@ export default function Home() {
                         <section>
                             <h5>Camping Tools</h5>
                         </section>
-                        <section className="d-flex justify-content-between">
-                            {[0, 1, 2, 3].map((index) => (
+                        <section className="card-containers">
+                            {[0, 1, 2, 3, 4, 5, 6, 7, 8, 9].map((index) => (
                                 <div class="card" style={{ width: '15rem' }}>
                                     <img src="..." class="card-img-top" alt="..." />
                                     <div class="card-body">
@@ -63,7 +63,7 @@ export default function Home() {
                         <section>
                             <h5>Alat Masak</h5>
                         </section>
-                        <section className="d-flex justify-content-between">
+                        <section className="card-containers">
                             {[0, 1, 2, 3].map((index) => (
                                 <div class="card" style={{ width: '15rem' }}>
                                     <img src="..." class="card-img-top" alt="..." />

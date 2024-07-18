@@ -3,6 +3,13 @@
   --secondary-color: #FF8A00;
 }
 
+.card-containers {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  /* gap: 16px; */
+}
+
+
 nav {
   background-color: var(--primary-color);
   color: #fff !important;
@@ -341,6 +348,8 @@ nav section button {
   }
 
   .home .produk section{
+    display: flex;
+    justify-content: space-between;
     flex-wrap: wrap;
   }
 
