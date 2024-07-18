@@ -4,25 +4,26 @@ import Navbar from "./navbar";
 import React, { useRef } from 'react';
 
 export default function Home() {
-  const scrollRef = useRef(null);
+  const scrollRef1 = useRef(null);
+  const scrollRef2 = useRef(null);
+  const scrollRef3 = useRef(null);
 
-  const scrollLeft = () => {
+  const scrollLeft = (scrollRef) => {
     if (scrollRef.current) {
-      scrollRef.current.scrollBy({
-        left: -200, // Ubah angka ini sesuai dengan kebutuhan scroll
-        behavior: 'smooth',
-      });
+      scrollRef.current.scrollBy({ left: -300, behavior: 'smooth' });
     }
   };
 
-  const scrollRight = () => {
+  const scrollRight = (scrollRef) => {
     if (scrollRef.current) {
-      scrollRef.current.scrollBy({
-        left: 200, // Ubah angka ini sesuai dengan kebutuhan scroll
-        behavior: 'smooth',
-      });
+      scrollRef.current.scrollBy({ left: 300, behavior: 'smooth' });
     }
   };
+
+  const detail = () => {
+      window.location.href ='/details';
+  }
+
   return (
     <>
       <div className="home">
@@ -50,10 +51,10 @@ export default function Home() {
               <h5>Paling Sering Disewa</h5>
             </section>
             <div style={{ width: '100%', overflowX: 'hidden', padding: '0 50px' }} className="cardContain" >
-              <div className="d-flex" style={{ overflowX: 'hidden' }} ref={scrollRef}>
+              <div className="d-flex" style={{ overflowX: 'hidden' }} ref={scrollRef1}>
                 <section className="d-flex justify-content-between">
-                  {[0, 1, 2, 3, 4, 5].map((index) => (
-                    <div key={index} className="card" style={{ width: '15rem' }}>
+                  {[0, 1, 2, 3, 4, 5, 6, 7, 8].map((index) => (
+                    <div key={index} className="card" style={{ width: '15rem' }} onClick={detail}>
                       <img src="https://img.freepik.com/free-photo/green-tent-set-up-forest_23-2148456476.jpg?t=st=1711645011~exp=1711648611~hmac=fbf3d5e84813d8dc70c4d7e731473ccc9c5051cb7136ba031ad0d983fb24481d&w=900" className="card-img-top" alt="..." />
                       <div className="card-body">
                         <span>
@@ -74,11 +75,11 @@ export default function Home() {
                   ))}
                 </section>
               </div>
-              <button style={{ position: 'absolute', top: '30%', left: '-5%' }} onClick={scrollLeft} className="btn buttonScrool"><svg width="89" height="89" viewBox="0 0 89 89" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <button style={{ position: 'absolute', top: '30%', left: '-5%' }} onClick={() => scrollLeft(scrollRef1)} className="btn buttonScrool"><svg width="89" height="89" viewBox="0 0 89 89" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <path d="M55.625 66.75L33.375 44.5L55.625 22.25" stroke="#226B5A" stroke-width="2" />
               </svg>
               </button>
-              <button style={{ position: 'absolute', top: '30%', right: '-5%' }} onClick={scrollRight} className="btn buttonScrool"><svg width="89" height="89" viewBox="0 0 89 89" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <button style={{ position: 'absolute', top: '30%', right: '-5%' }} onClick={() => scrollRight(scrollRef1)} className="btn buttonScrool"><svg width="89" height="89" viewBox="0 0 89 89" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <path d="M33.375 22.25L55.625 44.5L33.375 66.75" stroke="#226B5A" stroke-width="2" />
               </svg>
               </button>
@@ -89,11 +90,11 @@ export default function Home() {
               <h5>Tenda</h5>
             </section>
             <div style={{ width: '100%', overflowX: 'hidden', padding: '0 50px' }} className="cardContain" >
-              <div className="d-flex" style={{ overflowX: 'hidden' }} ref={scrollRef}>
+              <div className="d-flex" style={{ overflowX: 'hidden' }} ref={scrollRef2}>
                 <section className="d-flex justify-content-between">
                   {[0, 1, 2, 3, 4, 5].map((index) => (
                     <div key={index} className="card" style={{ width: '15rem' }}>
-                    <img src="https://encrypted-tbn3.gstatic.com/shopping?q=tbn:ANd9GcSQaxfGJrHZPUgkXudUiKNIKfEL2DY-jOtHcK4YoFkPjd4vJpIFT8fE9kA7KDcNH_B5yFcR2n_E-KG223CYscXyBaCEsARrjsXQWgDbT716Ad2SDgBHOukH&usqp=CAE" class="card-img-top" alt="..." />
+                      <img src="https://encrypted-tbn3.gstatic.com/shopping?q=tbn:ANd9GcSQaxfGJrHZPUgkXudUiKNIKfEL2DY-jOtHcK4YoFkPjd4vJpIFT8fE9kA7KDcNH_B5yFcR2n_E-KG223CYscXyBaCEsARrjsXQWgDbT716Ad2SDgBHOukH&usqp=CAE" class="card-img-top" alt="..." />
                       <div className="card-body">
                         <span>
                           <h5 className="card-title">Tenda 4 orang</h5>
@@ -113,11 +114,11 @@ export default function Home() {
                   ))}
                 </section>
               </div>
-              <button style={{ position: 'absolute', top: '30%', left: '-5%' }} onClick={scrollLeft} className="btn buttonScrool"><svg width="89" height="89" viewBox="0 0 89 89" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <button style={{ position: 'absolute', top: '30%', left: '-5%' }} onClick={() => scrollLeft(scrollRef2)} className="btn buttonScrool"><svg width="89" height="89" viewBox="0 0 89 89" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <path d="M55.625 66.75L33.375 44.5L55.625 22.25" stroke="#226B5A" stroke-width="2" />
               </svg>
               </button>
-              <button style={{ position: 'absolute', top: '30%', right: '-5%' }} onClick={scrollRight} className="btn buttonScrool"><svg width="89" height="89" viewBox="0 0 89 89" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <button style={{ position: 'absolute', top: '30%', right: '-5%' }} onClick={() => scrollRight(scrollRef2)} className="btn buttonScrool"><svg width="89" height="89" viewBox="0 0 89 89" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <path d="M33.375 22.25L55.625 44.5L33.375 66.75" stroke="#226B5A" stroke-width="2" />
               </svg>
               </button>
@@ -128,11 +129,11 @@ export default function Home() {
               <h5>Alat Masak</h5>
             </section>
             <div style={{ width: '100%', overflowX: 'hidden', padding: '0 50px' }} className="cardContain" >
-              <div className="d-flex" style={{ overflowX: 'hidden' }} ref={scrollRef}>
+              <div className="d-flex" style={{ overflowX: 'hidden' }} ref={scrollRef3}>
                 <section className="d-flex justify-content-between">
                   {[0, 1, 2, 3, 4, 5].map((index) => (
                     <div key={index} className="card" style={{ width: '15rem' }}>
-                    <img src="https://encrypted-tbn1.gstatic.com/shopping?q=tbn:ANd9GcQBcJlYhEQC6MGcQnP5jj3M-nCFOSU3VHWXuWThixQl5-HyTYDF25se82vOtdOMrJS-9H2OqOg_44Fx7HswvQPojFgnhsT2YscP6yfkivM&usqp=CAE" class="card-img-top" alt="..." />
+                      <img src="https://encrypted-tbn1.gstatic.com/shopping?q=tbn:ANd9GcQBcJlYhEQC6MGcQnP5jj3M-nCFOSU3VHWXuWThixQl5-HyTYDF25se82vOtdOMrJS-9H2OqOg_44Fx7HswvQPojFgnhsT2YscP6yfkivM&usqp=CAE" class="card-img-top" alt="..." />
                       <div className="card-body">
                         <span>
                           <h5 className="card-title">Tenda 4 orang</h5>
@@ -152,11 +153,11 @@ export default function Home() {
                   ))}
                 </section>
               </div>
-              <button style={{ position: 'absolute', top: '30%', left: '-5%' }} onClick={scrollLeft} className="btn buttonScrool"><svg width="89" height="89" viewBox="0 0 89 89" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <button style={{ position: 'absolute', top: '30%', left: '-5%' }} onClick={() => scrollLeft(scrollRef3)} className="btn buttonScrool"><svg width="89" height="89" viewBox="0 0 89 89" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <path d="M55.625 66.75L33.375 44.5L55.625 22.25" stroke="#226B5A" stroke-width="2" />
               </svg>
               </button>
-              <button style={{ position: 'absolute', top: '30%', right: '-5%' }} onClick={scrollRight} className="btn buttonScrool"><svg width="89" height="89" viewBox="0 0 89 89" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <button style={{ position: 'absolute', top: '30%', right: '-5%' }} onClick={() => scrollRight(scrollRef3)} className="btn buttonScrool"><svg width="89" height="89" viewBox="0 0 89 89" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <path d="M33.375 22.25L55.625 44.5L33.375 66.75" stroke="#226B5A" stroke-width="2" />
               </svg>
               </button>
@@ -169,9 +170,9 @@ export default function Home() {
             <section className="d-flex justify-content-between">
               {[0, 1, 2, 3].map((index) => (
                 <div class="card" style={{ width: '16rem' }}>
-                <Link href="/produk/#produk">
-                  <button style={{backgroundColor: index % 2 ? 'red' : 'green'}}>Tenda</button>
-                </Link>
+                  <Link href="/produk/#produk">
+                    <button style={{ backgroundColor: index % 2 ? 'red' : 'green' }}>Tenda</button>
+                  </Link>
                 </div>
               ))}
             </section>
